@@ -1,0 +1,12 @@
+{
+    "name": "shtikov/redis-php",
+    "description": "Simple client for working with Redis cache service.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Konstantin",
+            "email": "konstantine.shtikov@yandex.ru"
+        }
+    ],
+    "require": {}
+}
