@@ -10,13 +10,13 @@ trait Misc
      * @param mixed $bool
      * @return boolean|null
      */
-    public function toBool($bool): ?bool
+    public function toBool($bool): bool
     {
-        if (\is_null($bool)) {
-            return null;
+        if (!\is_string($bool)) {
+            return (bool) $bool;
         }
-
-        return (bool) $bool;
+        
+        return strtolower($bool) === 'true' ? true : false;
     }
 
     /**

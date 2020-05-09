@@ -21,7 +21,7 @@ final class Redis
 
     public function has(string $key): bool
     {
-        $output = $this->queryExecutor->execute('exists', $key);
+        $output = $this->executor->execute('exists', $key);
         return $this->toBool($output);
     }
 

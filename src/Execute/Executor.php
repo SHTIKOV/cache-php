@@ -16,6 +16,7 @@ final class Executor implements ExecutorInterface
 
     public function execute(string $methodName, string $key, $value = null): ?string
     {
-        return $this->config->getUrl();
+        $this->config->getUrl();
+        return 'bar';
     }
 }

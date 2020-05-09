@@ -70,7 +70,7 @@ final class Config
 
     public function getUrl(): string
     {
-        return 'http://'.$this->host.':'.$this->port;
+        return $this->host.':'.$this->port;
     }
     
     public static function fromArray(array $data): Config
