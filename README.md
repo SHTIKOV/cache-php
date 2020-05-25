@@ -1,4 +1,4 @@
-# redis-php
+# cache-php
 
 Simple client for working with Redis cache service.
 
