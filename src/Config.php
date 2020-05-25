@@ -1,8 +1,8 @@
 <?php declare (strict_types = 1);
 
-namespace Shtikov\Redis;
+namespace Shtikov\CachePHP;
 
-use Shtikov\Redis\Tools\Misc as MiscTools;
+use Shtikov\CachePHP\Tools\Misc as MiscTools;
 
 final class Config
 {

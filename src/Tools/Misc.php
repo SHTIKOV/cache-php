@@ -1,6 +1,6 @@
 <?php declare (strict_types = 1);
 
-namespace Shtikov\Redis\Tools;
+namespace Shtikov\CachePHP\Tools;
 
 trait Misc
 {

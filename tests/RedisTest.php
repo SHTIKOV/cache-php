@@ -1,10 +1,10 @@
 <?php declare (strict_types = 1);
 
-use Shtikov\Redis;
-use Shtikov\Redis\Config;
+use Shtikov\CachePHP;
+use Shtikov\CachePHP\Config;
 use PHPUnit\Framework\TestCase;
 
-class RedisTest extends TestCase
+class CachePHPTest extends TestCase
 {
     /**
      * @depends ConfigTest::testFromArray
@@ -12,10 +12,10 @@ class RedisTest extends TestCase
      */
     public function testSetGet(Config $config): void
     {
-        $redis = new Redis($config);
-        $redis->set('foo', 'bar');
+        $cachePHP = new CachePHP($config);
+        $cachePHP->set('foo', 'bar');
 
-        $result = $redis->get('foo');
+        $result = $cachePHP->get('foo');
         $this->assertSame($result, null);
     }
 
@@ -25,11 +25,11 @@ class RedisTest extends TestCase
      */
     public function testDelete(Config $config): void
     {
-        $redis = new Redis($config);
-        $this->assertSame($redis->get('foo'), null);
+        $cachePHP = new CachePHP($config);
+        $this->assertSame($cachePHP->get('foo'), null);
 
-        $redis->delete('foo');
+        $cachePHP->delete('foo');
 
-        $this->assertSame($redis->get('foo'), null);
+        $this->assertSame($cachePHP->get('foo'), null);
     }
 }

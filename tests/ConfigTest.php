@@ -1,7 +1,7 @@
 <?php declare (strict_types = 1);
 
 use PHPUnit\Framework\TestCase;
-use Shtikov\Redis\Config;
+use Shtikov\CachePHP\Config;
 
 class ConfigTest extends TestCase
 {

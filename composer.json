@@ -1,6 +1,6 @@
 {
-    "name": "shtikov/redis-php",
-    "description": "Simple client for working with Redis cache service.",
+    "name": "shtikov/cache-php",
+    "description": "Simple client for working with ache service.",
     "type": "library",
     "authors": [
         {

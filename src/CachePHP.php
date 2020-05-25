@@ -2,11 +2,11 @@
 
 namespace Shtikov;
 
-use Shtikov\Redis\Execute\Executor;
-use Shtikov\Redis\Config;
-use Shtikov\Redis\Tools\Misc as MiscTools;
+use Shtikov\CachePHP\Execute\Executor;
+use Shtikov\CachePHP\Config;
+use Shtikov\CachePHP\Tools\Misc as MiscTools;
 
-final class Redis
+final class CachePHP
 {
     use MiscTools;
 

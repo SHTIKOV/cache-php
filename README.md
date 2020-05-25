@@ -1,6 +1,6 @@
 # cache-php
 
-Simple client for working with Redis cache service.
+Simple client for working with cache service.
 
 ## How to install
 To install, run the following [composer](https://getcomposer.org/)  command:
@@ -15,8 +15,8 @@ composer require shtikov/redis-php
 
 require __DIR__ . '/vendor/autoload.php';
 
-use Shtikov\Redis;
-use Shtikov\Redis\Config;
+use Shtikov\CachePHP;
+use Shtikov\CachePHP\Config;
 
 $configData = [
   'host' => 'localhost',
@@ -24,7 +24,7 @@ $configData = [
   'lifetime' => 5000,
 ];
 $config = Config::fromArray($configData);
-$redis = new Redis($config);
+$redis = new CachePHP($config);
 $redis->set('foo', 'bar');
 
 $result = $redis->get('foo');

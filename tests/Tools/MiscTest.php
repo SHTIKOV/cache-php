@@ -1,6 +1,6 @@
 <?php declare (strict_types = 1);
 
-use Shtikov\Redis\Tools\Misc;
+use Shtikov\CachePHP\Tools\Misc;
 use PHPUnit\Framework\TestCase;
 
 class MiscTest extends TestCase

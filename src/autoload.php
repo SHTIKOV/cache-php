@@ -5,10 +5,10 @@ spl_autoload_register(function ($className) {
         return;
     }
 
-    if ($className === 'Shtikov\Redis') {
+    if ($className === 'Shtikov\CachePHP') {
         $className = str_replace('Shtikov', './src', $className);
     } else {
-        $className = str_replace('Shtikov\Redis', './src', $className);
+        $className = str_replace('Shtikov\CachePHP', './src', $className);
     }
     $className = str_replace('\\', '/', $className);
     include $className . '.php';

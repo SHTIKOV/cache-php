@@ -1,8 +1,8 @@
 <?php declare (strict_types = 1);
 
-namespace Shtikov\Redis\Execute;
+namespace Shtikov\CachePHP\Execute;
 
-use Shtikov\Redis\Config;
+use Shtikov\CachePHP\Config;
 
 final class Executor implements ExecutorInterface
 {
